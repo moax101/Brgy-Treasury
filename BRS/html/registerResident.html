@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel ="stylesheet" type ="text/css" href="resources/css/style.css">
+    <link rel ="stylesheet" type ="text/css" href="resources/css/style-responsive.css">
+    <title>Barangay Treasury System</title>
+</head>
+<body>
+
+    <div id="main-header">
+            <h1>BARANGAY TREASURY</h1>
+    </div>
+    
+    <!-- NAVIGATION PANEL -->
+    <div id="nav-panel">
+            <ul>
+                     <ul>
+                        <li class="dropdown">
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#javascript:void(0)" class="dropbtn" onclick="myFunction()">Residents</a>
+                            <div class="dropdown-content" id="myDropdown">
+                                <a href="viewResident.html">View list of People</a>
+                                <a href="registerResident.html">Add new Resident</a>
+                            </div>
+                        </li>
+                        <li class="dropdown">
+                            <a href="transaction.html">Transaction</a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="payment.html">Payment</a>
+                        </li>
+                        <li class="dropdown2">
+                            <a href="javascript:void(0)" class="dropbtn3" onclick="myFunction3()">Settings</a>
+                            <div class="dropdown-content3" id="myDropdown3">
+                            <a href="settings.html">Transaction</a>
+                            </div>
+                        </li>
+                    </ul>  
+            </ul>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="container">
+            <div class="row">
+
+                <div class="col-4">
+                        <div class="profile-img">
+                                <div class="photo-wrapper">
+                                    <div class="photo">
+                                        <a href="img/IC.png"><img class="img-responsive" src="img/IC.png" alt="Image" ></a>
+                                    </div>
+                                    <div class="overlay"></div>
+                                </div>    
+                                         
+                            </div>
+                            <div class="col-12">
+                                <input type="file" id="#" class="#">
+                                <button  class="btn btn-theme" type="button">Edit</button>
+                            </div>
+                                   
+                                   
+                </div>
+
+                <div class="col-4">
+                            <h2>Register new resident</h2>
+                            <div class="fill">
+                                    <form class="#" action="#" method="#" autocomplete="on">
+                                        <table >
+                                        <tr>
+                                            <td>
+                                                <label for="residentId">Resident ID:</label>
+                                            </td>
+                                            <td>
+                                                <input type="number" maxlength="50" placeholder="">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                                <td>
+                                                    <label for="sname">Surname:</label>
+                                                </td>
+                                                <td>
+                                                    <input type="text" maxlength="50" placeholder="">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <label for="fname">Firstname:</label>
+                                                </td>
+                                                <td>
+                                                    <input type="text" maxlength="50" placeholder="">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <label for="mname">Middlename:</label>
+                                                </td>
+                                                <td>
+                                                    <input type="text" maxlength="50" placeholder="">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <label for="bday">Birthday: </label>
+                                                </td>
+                                                <td>
+                                                    <input type="date" name="bday">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <label for="sex">Sex:</label>
+                                                </td>
+                                                <td>
+                                                    <input type="radio" name="gender" value="male" checked> Male
+                                                    <input type="radio" name="gender" value="female"> Female<br>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <label for="sex">Status:</label>
+                                                </td>
+                                                <td>
+                                                    <select>
+                                                        <option value="">Single</option>
+                                                        <option value="">Married</option>
+                                                        <option value="">Widow</option>
+                                                        <option value="">Widower</option>
+                                                    </select>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </form>      
+                            </div>  
+                            
+                         
+                </div>
+
+                <div class="col-4">
+                        <div class="fill">
+                                <form class="#" action="#" method="#" autocomplete="on">
+                                    <table >
+                                        <tr>
+                                            <td>
+                                                <label for="brgy">Barangay:</label>
+                                            </td>
+                                            <td>
+                                                <input type="text" maxlength="50" placeholder="">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <label for="dist">District:</label>
+                                            </td>
+                                            <td>
+                                                <select>
+                                                        <option value="">District 1</option>
+                                                        <option value="">District 2</option>
+                                                        <option value="">District 3</option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <label for="purok">Purok:</label>
+                                            </td>
+                                            <td>
+                                                <select>
+                                                    <option value="">Purok 1</option>
+                                                    <option value="">Purok 2</option>
+                                                    <option value="">Purok 3</option>
+                                                    <option value="">Purok 4-A</option>
+                                                    <option value="">Purok 4-B</option>
+                                                    <option value="">Purok 4-C</option>
+                                                    <option value="">Purok 5-A</option>
+                                                    <option value="">Purok 5-B</option>
+                                                    <option value="">Purok 6</option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <label for="city">City:</label>
+                                            </td>
+                                            <td>
+                                                <input type="text" maxlength="50" placeholder="">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                                     
+                                        </tr> 
+                                    </table>
+                                </form>    
+                                
+                            <div id="myModal" class="modal">
+                                            
+                                            <!-- Modal content -->
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                <span class="close">×</span>
+                                                <h2>MESSAGE</h2>
+                                                </div>
+                                                <div class="modal-body">
+                                                <p>Succesfully Registered</p>
+                                                </div>
+                                            </div>
+                            </div>            
+                            <button id="myBtn" class="btn btn-theme" type="submit">Save</button>
+                            <button class="btn btn-theme04" type="button">Cancel</button>
+                        </div>
+                </div>
+            </div>
+    </div>
+
+
+    <div id="footer">
+            BrgyTreasury
+    </div>
+        <!-- Script for navigation panel -->
+        <script>
+                /* When the user clicks on the button, 
+                toggle between hiding and showing the dropdown content */
+                function myFunction() {
+                    document.getElementById("myDropdown").classList.toggle("show");
+                }
+                function myFunction2() {
+                    document.getElementById("myDropdown2").classList.toggle("show");
+                }
+                function myFunction3() {
+                    document.getElementById("myDropdown3").classList.toggle("show");
+                }
+                // Close the dropdown if the user clicks outside of it
+                window.onclick = function(e) {
+                if (!e.target.matches('.dropbtn')) {
+                
+                    var dropdowns = document.getElementsByClassName("dropdown-content");
+                    for (var d = 0; d < dropdowns.length; d++) {
+                    var openDropdown = dropdowns[d];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                    }
+                }
+    
+                if (!e.target.matches('.dropbtn2'))
+                {
+                    var dropdowns = document.getElementsByClassName("dropdown-content2");
+                    for (var d = 0; d < dropdowns.length; d++) {
+                    var openDropdown = dropdowns[d];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                    }
+                }
+                if (!e.target.matches('.dropbtn3'))
+                {
+                    var dropdowns = document.getElementsByClassName("dropdown-content3");
+                    for (var d = 0; d < dropdowns.length; d++) {
+                    var openDropdown = dropdowns[d];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                    }
+    
+                }
+            
+                }
+        </script>
+
+        <!-- Script for modal -->
+        <script>
+                // Get the modal
+                var modal = document.getElementById('myModal');
+                
+                // Get the button that opens the modal
+                var btn = document.getElementById("myBtn");
+                
+                // Get the <span> element that closes the modal
+                var span = document.getElementsByClassName("close")[0];
+                
+                // When the user clicks the button, open the modal 
+                btn.onclick = function() {
+                    modal.style.display = "block";
+                }
+                
+                // When the user clicks on <span> (x), close the modal
+                span.onclick = function() {
+                    modal.style.display = "none";
+                }
+                
+                // When the user clicks anywhere outside of the modal, close it
+                window.onclick = function(event) {
+                    if (event.target == modal) {
+                        modal.style.display = "none";
+                    }
+                }
+        </script>
+                
+        
+                
+</body>
+</html>

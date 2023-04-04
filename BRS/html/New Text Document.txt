@@ -1,0 +1,28 @@
+                            <div id="myModal" class="modal">
+                                            
+                                            <!-- Modal content -->
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                <span class="close">×</span>
+                                                <h2>MESSAGE</h2>
+                                                </div>
+                                                <div class="modal-body">
+                                                <p>Succesfully Registered</p>
+                                                </div>
+                                            </div>
+                            </div>            
+
+a.transaction ,b.transaction, c.transaction ,
+
+CREATE TRIGGER trig1 BEFORE INSERT
+	on payment1 FOR EACH ROW
+    INSERT INTO trigger_time VALUES(Now());
+CREATE VIEW history AS SELECT surname,status,brgy, transaction1,payment1,exec_time FROM resident, payment1,trigger_time where resident.brgy_id=payment1.brgy_id ORDER BY exec_time  ASC LIMIT 5
+
+CREATE VIEW history AS SELECT surname,status,brgy, transaction1,exec_time FROM resident, payment1,trigger_time ORDER BY exec_time  DESC LIMIT 5
+CREATE VIEW history AS SELECT surname,status,brgy, transaction1,transaction2,transaction3,,exec_time FROM resident, payment1,payment2,payment3, trigger_time where resident.brgy_id = payment1.brgy_id AND resident.brgy_id = payment2.brgy_id AND resident.brgy_id = payment3.brgy_id
+CREATE VIEW history2 AS SELECT surname,status,brgy, transaction2,payment2,exec_time FROM resident, payment2,trigger_time where resident.brgy_id=payment1.brgy_id ORDER BY pay_no  ASC LIMIT 5
+CREATE VIEW history AS SELECT surname,status,brgy, a.payment,b.payment,c.payment,exec_time FROM resident, payment1 a, payment2 b, payment3 c, trigger_time where resident.brgy_id = a.brgy_id AND resident.brgy_id = b.brgy_id AND resident.brgy_id = c.brgy_id;
+
+
+CREATE VIEW history AS SELECT surname,status,brgy,transaction1 ,transaction2, transaction3, payment1,payment2,payment3,exec_time FROM resident, payment1 a, payment2 b, payment3 c, trigger_time where resident.brgy_id = a.brgy_id AND resident.brgy_id = b.brgy_id AND resident.brgy_id = c.brgy_id;

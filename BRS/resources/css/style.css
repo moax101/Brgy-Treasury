@@ -1,0 +1,504 @@
+
+/* ----------------------MAIN COMPONENTS---------------------- */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.row {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+#container {
+    width: 100%;
+    height: 100%;
+}
+html, body{
+    height: 100;
+    height: 350px;
+    font-family: 'form2Ruda', sans-serif;
+    padding: 0px !important;
+    margin: 0px !important;
+    font-size: 13px;
+    text-rendering: optimizeLegibility;
+}
+
+#main-header {
+    position: absolute;
+    height: 44.3px;
+    background-color:black;
+    color: white;
+    text-align:center;
+    line-height: 30px;
+    list-style: none;   
+    position: relative;
+    padding-top: 10px;
+}
+#nav-panel {
+    height: 50px;
+    background-color:black;
+    color:white;
+    text-align:center;
+    line-height:30px;
+    list-style: none;   
+    position: relative;
+}
+
+#footer {
+    background-color:black;
+    color:white;
+    clear:both;
+    text-align:center;
+    padding: 5px;
+}
+
+
+/* ----------------------DIVISION FOR FORM TABLE---------------------- */
+
+.fill1 {
+    width: 540px;
+    margin: 5px 10px;
+    padding: 10px 10px;
+    background-color: rgb(86, 228, 86);
+    text-transform: uppercase;
+    border-radius: 10px;
+    text-align: left;
+}  
+.form1 {
+    padding-left: 20px;
+    padding-right: 50px;
+    width: 680px;
+    background: rgb(212, 210, 210);
+    border: 1px solid black;
+    border-radius: 10px;
+    text-transform: uppercase;
+    height: 463px;
+    margin-left: 15px;
+}
+    
+
+
+.form2 {
+    padding: 5px 10px;
+    background: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    text-transform: uppercase;
+    height: 300px;
+    width: 300px;
+    margin-left: 15px;
+}
+.form3 {
+    background: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    text-transform: uppercase;
+    height: 360px;
+    overflow: auto;
+}
+.form4 {
+    background: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    text-transform: uppercase;
+    height: 120px;
+    margin-left: 15px;
+    padding: 5px 10px;
+    overflow: auto;
+}
+.form5 {
+    background: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    text-transform: uppercase;
+    height: 260px;
+    margin-left: 15px;
+    padding: 5px 10px;
+    overflow: auto;
+}
+.form6 {
+    padding: 10px 10px;
+    background: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    text-transform: uppercase;
+    height: 50px;
+}
+.fill {
+    padding: 10px 5px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    margin-left: 5px;
+}
+
+
+/* ------------------------------TABLE---------------------------- */
+.resident-list{  
+    width: 105%;
+    border-collapse: collapse;
+    overflow: auto;
+    display: inline-block;
+    box-sizing: border-box;
+    text-align: center;
+}
+.resident-list td {
+    width: 180px;
+    border: 1px solid rgb(0, 0, 0);
+}
+.resident-list th {
+    width: 150px;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+
+  
+  /* ------------------------------INPUT FIELD DESIGN---------------------------- */
+  input[type=text], select {
+      width: 250px;
+      padding: 5px 20px;
+      margin: 5px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+  }
+
+
+  input[type=search], select {
+    width: 250px;
+    padding: 5px 20px;
+    margin: 5px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  input[type=number], select {
+      width: 80px;
+      padding: 5px 10px;
+      margin: 5px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+  }
+  input[type=textarea], select {
+    width: 180px;
+    padding: 5px 10px;
+    margin: 5px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  input[type=date], select {
+    width: 150px;
+    padding: 5px 10px;
+    margin: 5px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }  
+  input[type=submit] {
+      width:150px;
+      background-color: #4CAF50;
+      color: white;
+      padding: 5px 5px;
+      margin: 10px 0px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+  } 
+  input[type=submit]:hover {
+      background-color: #45a049;
+  }
+  label {
+      width: 120px;
+      padding: 5px;
+      margin: 3px 0px;
+      display: inline-block;
+  }
+  .label2 {
+    width: 2000px;
+    padding: 5px;
+    margin: 3px 0px;
+    display: inline-block;
+  }
+
+/* ------------------------------NAVIGATION PANEL---------------------------- */
+ul {
+    list-style-type: none;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 10px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.show {display:block;}
+
+li a, .dropbtn2 {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 10px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown2:hover .dropbtn {
+    background-color: red;
+}
+
+li.dropdown2 {
+    display: inline-block;
+}
+
+.dropdown-content2 {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content2 a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content2 a:hover {background-color: #f1f1f1}
+
+.show {display:block;}
+
+li a, .dropbtn3 {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 10px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown2:hover .dropbtn {
+    background-color: red;
+}
+
+li.dropdown3 {
+    display: inline-block;
+}
+
+.dropdown-content3 {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content3 a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content3 a:hover {background-color: #f1f1f1}
+
+.show {display:block;}
+
+
+/* ----------------------------GALLERY CONFIGURATION---------------------------- */
+
+.photo {
+    width:150px;
+    height:150px;
+}
+.profile-img {
+    max-width: 150px;
+    height: 152px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 0px auto;
+    padding: 0px auto;
+}
+.photo-wrapper {
+      display: block;
+      overflow: hidden;
+      border-radius: 10px;
+      background-position:center;
+}
+      
+
+/* -----------------------------------BUTTONS-----------------------------------*/
+.btn {
+    display: inline-block;
+    width: 100px;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+.btn2 {
+    display: inline-block;
+    width: 200px;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+.btn3 {
+    display: inline-block;
+    width: 130px;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+/*Theme Buttons*/
+  .btn-theme {
+        color: #fff;
+        background-color: #4ECDC4;
+        border-color: #48bcb4;
+  }
+  .btn-theme02 {
+    color: #fff;
+    background-color: #ac92ec;
+    border-color: #967adc;
+  }
+  .btn-theme03 {
+    color: #fff;
+    background-color: #48cfad;
+    border-color: #37bc9b;
+  }
+  .btn-theme04 {
+    color: #fff;
+    background-color: #ed5565;
+    border-color: #da4453;
+  }
+  .btn-theme05 {
+    color: #fff;
+    background-color: #556ced;
+    border-color: #4453da;
+  }
+  .btn-clear-g:hover {
+      color: white;
+  }
+
+
+/* -----------------------------------MODAL-----------------------------------*/
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 30%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+    text-align: center;
+}
+
+.modal-body {
+    padding: 15px 12px;
+    height: 100px;
+    text-align: center;
+    font-family: 'Ruda', sans-serif;
+    font-weight: 30px;
+    font-size: 150%;
+}
+
+
+.margins {
+    padding: 15px 16px;
+    height: 100px;
+    text-align: center;
+    font-family: 'Ruda', sans-serif;
+    font-weight: 30px;
+    font-size: 150%;
+}
